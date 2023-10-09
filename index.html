@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible"
+
+          content="IE=edge">
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Survey Form
+
+    </title>
+ 
+
+    <style>
+
+        body {
+
+            background-color: #8e79f3c7;
+
+            font-family: Verdana;
+
+            text-align: center;
+
+        }
+
+        form {
+
+            background-color: #fff;
+
+            max-width: 500px;
+
+            margin: 50px auto;
+
+            padding: 30px 20px;
+
+            box-shadow: 2px 5px 10px rgba(12, 12, 12, 0.259);
+
+        }
+
+        .form-control {
+
+            text-align: left;
+
+            margin-bottom: 25px;
+
+        }
+
+        .form-control label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+        }
+
+        .form-control input,
+
+        .form-control select,
+
+        .form-control textarea {
+
+            border: 1px solid #777;
+
+            border-radius: 2px;
+
+            font-family: inherit;
+
+            padding: 10px;
+
+            display: block;
+
+            width: 95%;
+
+        }
+
+        .form-control input[type="radio"],
+
+        .form-control input[type="checkbox"] {
+
+            display: inline-block;
+
+            width: auto;
+
+        }
+
+        button {
+
+            background-color: #6d63f6;
+
+            border: 1px solid #777;
+
+            border-radius: 2px;
+
+            font-family: inherit;
+
+            font-size: 20px;
+
+            display: block;
+
+            width: 30%;
+
+            margin-top: 50px;
+
+            margin-bottom: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Customer Survey Form</h1>
+
+    <form id="form">
+
+        <div class="form-control">
+
+            <label for="fistname" id="label-firstname">
+
+               First Name*
+
+            </label>
+
+            <input type="text" id="firstname" placeholder="Enter your first name" required />
+
+        </div>
+
+         
+        <div class="form-control">
+
+            <label for="lastname" id="label-lastname">
+
+                Last Name*
+ 
+            </label>
+ 
+            <input type="text" id="lastname" placeholder="Enter your last name" required />
+
+        </div>
+
+        <div class="form-control">
+
+            <label for="email" id="label-email">
+
+                Email*
+
+            </label>
+
+            <input type="email" id="email" placeholder="Enter your email" required />
+
+        </div>
+
+        <div class="form-control">
+
+            <label for="dateofbirth" id="label-dateofbirth">
+
+                Date Of Birth*
+
+            </label>
+
+            <input type="date" id="dateofbirth" placeholder="Enter your dob" required />
+
+        </div>
+
+        <div class="form-control">
+
+            <label for="country" id="label-country">
+
+                Country*
+
+            </label>
+
+            <select name="country" id="country">
+
+                <option value="India">India</option>
+
+                <option value="USA">USA</option>
+
+                <option value="Canada">Canada</option>
+
+                <option value="Africa">Africa</option>
+
+                <option value="China">China</option>
+
+                <option value="other">Other</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-control">
+
+            <label>
+
+                Gender*
+
+            </label>
+
+            <label for="male">
+
+            <input type="radio" id="male" name="gender">Male</input>
+
+            </label>
+
+            <label for="female">
+
+            <input type="radio" id="female" name="gender">Female</input>
+
+            </label>
+
+            <label for="other">
+
+            <input type="radio" id="other" name="gender">Other</input>
+            
+            </label>
+
+        </div>
+
+        <div class="form-control">
+
+            <label for="profession" id="label-profession">
+
+                Profession*
+
+            </label>
+
+            <input type="text" id="profession" placeholder="Enter your profession" required />
+
+        </div>
+
+        <div class="form-control">
+
+            <label for="mobilenumber" id="label-mobilenumber">
+
+                Mobile Number*
+
+            </label>
+
+            <input type="number" id="mobilenumber" placeholder="Enter your mobile number" required />
+
+        </div>
+
+        <div class="form-control">
+
+            <label>
+
+            Is this first time you are using our product & service?
+
+            </label>
+
+            <label for="yes">
+
+            <input type="radio" id="yes" name="Is this first time you are using our product & service?">Yes</input>
+
+            </label>
+
+            <label for="no">
+
+                <input type="radio" id="no" name="Is this first time you are using our product & service?">No</input>
+    
+                </label>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>
+    
+                Would you suggestion to your friends and colleague?
+    
+                </label>
+    
+                <label for="yes">
+    
+                <input type="radio" id="yes" name="Would you suggestion to your friends and colleague?">Yes</input>
+    
+                </label>
+
+                <label for="no">
+
+                    <input type="radio" id="no" name="Would you suggestion to your friends and colleague?">No</input>
+        
+                    </label>
+
+                </div>
+
+                <div class="form-control">
+
+                    <label>
+        
+                    How satisfied are you with our company overall?
+        
+                    </label>
+        
+                    <label for="satisfied">
+        
+                    <input type="radio" id="satisfied" name="How satisfied are you with our company overall?">satisfied</input>
+        
+                    </label>
+
+                    <label for="unsatisfied">
+
+                    <input type="radio" id="unsatisfied" name="How satisfied are you with our company overall?">Unsatisfied</input>
+            
+                    </label>
+
+                    <label for="undecided">
+
+                    <input type="radio" id="undecided" name="How satisfied are you with our company overall?">Undecided</input>
+                
+                    </label>
+
+                </div>
+
+       
+        <div class="form-control">
+
+            <label for="comment">
+
+            Do you have suggestion to improve our service?
+
+            </label>
+
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+
+        </div>
+
+        <button type="submit" value="submit">
+            Submit
+         </button>
+         <button type="reset" value="reset">
+            Reset
+         </button>
+
+    </form>
+
+</body>
+
+</html>
